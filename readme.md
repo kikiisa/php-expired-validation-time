@@ -1,6 +1,4 @@
-Berikut adalah README yang menjelaskan kode PHP yang Anda berikan:
 
----
 
 # Date Manipulation Script
 
