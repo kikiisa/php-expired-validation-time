@@ -15,6 +15,8 @@ function repairDate($date)
         return $date;
     }
 }
+
+
 function convertToYMD($dateString, $dateFormat = null) {
     try {
         // Convert date to Carbon instance with given format or default to parse
@@ -50,8 +52,12 @@ function isExpired($issueDate, $validityYears) {
 
 }
 
-$issueDate = '1999-07-12';
-$validityYears = 5;
-// echo convertToYMD($issueDate,"Y-m-d");
-// echo repairDate($issueDate);
-echo isExpired(repairDate($issueDate), $validityYears);
+function test()
+{
+    $issueDate = '1999-07-12';
+    $validityYears = 5;
+    convertToYMD($issueDate,"Y-m-d");
+    repairDate($issueDate);
+    isExpired(repairDate($issueDate), $validityYears);
+    
+}
